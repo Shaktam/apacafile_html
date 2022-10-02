@@ -18,4 +18,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: File uploading....
-        run: aws s3 cp index.html s3://s3cpibucket.github
+        run: aws s3 cp index.html s3://s3cpibucket.github --acl public-read
